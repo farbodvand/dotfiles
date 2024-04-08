@@ -1,11 +1,6 @@
 .DS_Store
 fish/*
 !fish/config.fish
-# .config/fish/completions
-# .config/fish/conf.d
-# .config/fish/functions/
-# .config/fish/themes
-# .config/fish/fish_variables
 .config/zed/
 .config/yarn/
 .config/qBittorrent
