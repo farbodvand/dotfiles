@@ -2,4 +2,7 @@
 LICENSE
 readme.md
 \.git
-
+.gitconfig
+vscode
+Brewfile
+macos

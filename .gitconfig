@@ -1,0 +1,18 @@
+[user]
+	name =
+	email = 
+	signingKey =
+[core]
+	editor = nano
+	autocrlf = input
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[alias]
+	lg = log --pretty=format:'%an commited %h'
+	unstage = restore --staged .

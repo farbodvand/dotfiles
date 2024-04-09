@@ -1,7 +1,0 @@
-.DS_Store
-fish/*
-!fish/config.fish
-.config/zed/
-.config/yarn/
-.config/qBittorrent
-.config/clash.meta

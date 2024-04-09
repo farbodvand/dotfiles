@@ -5,12 +5,14 @@ brew install stow
 mkdir $HOME/dotfiles
 cd dotfiles
 git init .
-nano git .gitignore # add ignored files and dirs
-nano .stow-local-ignore # add ignore list if any
+nano .gitignore # add git ignore items
+nano .stow-local-ignore # add stow ignore items
 mkdir .config
 cp -r ~/.config/ .config
 rm -rf ~/.config/
 stow .
+
+
 SetFile -P -a V filename # hide symlink icon in home
 ```
 
