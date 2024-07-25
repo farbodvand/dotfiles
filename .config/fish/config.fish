@@ -8,9 +8,14 @@ set -gx PATH /usr/local/bin /usr/local/sbin /usr/bin /bin /usr/sbin /sbin /usr/X
 set -x PATH /Users/farbod/Library/Python/3.9/bin $PATH
 
 ### aliases
-alias pip pip3
 alias prompt 'clear_line; set_prompt --color $fish_color_prompt $fish_prompt'
-
+alias b='brew'
+alias g='git'
+alias n='npm'
+alias ni='npm i'
+alias pip='pip3'
+alias p='python3'
+alias d='docker'
 ### proxies
 #set HTTP_PROXY socks5://127.0.0.1:800
 #set HTTPS_PROXY socks5://127.0.0.1:800
