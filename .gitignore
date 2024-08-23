@@ -13,3 +13,4 @@ fish/*
 .config/configstore/
 .config/clash/
 .config/raycast/
+.config/neovide/

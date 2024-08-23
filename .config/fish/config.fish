@@ -40,3 +40,11 @@ function clear_line
   echo -e "\r"  # Carriage return to move cursor to beginning of line
   echo -e "\033[K"  # Clear entire line
 end
+
+# Add SSH keys to the fish session
+ssh-add --apple-use-keychain ~/.ssh/git -q
+ssh-add --apple-load-keychain -q
+
+starship init fish | source
+fzf --fish | source
+#fzf_configure_bindings
