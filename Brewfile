@@ -1,30 +1,67 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
-brew "ca-certificates"
-brew "openssl@3"
-brew "readline"
-brew "sqlite"
-brew "aria2"
-brew "c-ares"
-brew "pcre2"
-brew "fish"
-brew "go"
-brew "msgpack"
-brew "nano"
-brew "nanorc"
-brew "neovim"
-brew "node"
-brew "ripgrep"
-brew "stow"
-brew "tree"
-brew "typst"
-brew "unzip"
-brew "wget"
-brew "yarn"
-cask "anki"
-cask "hoppscotch"
-cask "iina"
-cask "kitty"
-cask "mos"
-cask "qbittorrent"
-cask "rectangle"
+aria2
+bat
+brotli
+bun
+c-ares
+ca-certificates
+fish
+fisher
+fzf
+gettext
+go
+gping
+icu4c
+jq
+krb5
+libgit2@1.7
+libidn2
+libnghttp2
+libssh2
+libunistring
+libuv
+libvterm
+lpeg
+lua
+luajit
+luarocks
+luv
+lz4
+mongodb-community
+mongodb-database-tools
+mongosh
+msgpack
+nano
+nanorc
+ncurses
+neovim
+node
+nvm
+oniguruma
+openssl@3
+pcre2
+pnpm
+postgresql@14
+readline
+ripgrep
+sqlite
+starship
+stow
+tree
+tree-sitter
+typst
+unibilium
+unzip
+wget
+yarn
+anki
+hoppscotch
+iina
+kitty
+mongodb-compass
+mos
+openconnect-gui
+pgadmin4
+postman
+rectangle
+skim
+transmission
