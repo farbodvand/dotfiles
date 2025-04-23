@@ -1,0 +1,147 @@
+{
+  "auto_update": false,
+  "vim_mode": true,
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "theme": "Monokai Night",
+  "buffer_font_size": 19.4,
+  "buffer_font_family": "Hack",
+  "ui_font_family": "SF Pro Text",
+  "ui_font_size": 19.3,
+  "cursor_blink": false,
+  "format_on_save": "on",
+  "show_call_status_icon": false,
+  "show_copilot_suggestions": false,
+  "soft_wrap": "editor_width",
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    }
+  },
+  "selection_highlight_debounce": 0,
+  "lsp_highlight_debounce": 0,
+  "show_user_picture": false,
+  "use_system_prompts": false,
+  "auto_signature_help": true,
+  "tab_size": 2,
+  "assistant": {
+    "dock": "left",
+    "version": "2"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "notification_panel": {
+    "dock": "right"
+  },
+  "features": {
+    "edit_prediction_provider": "none",
+    "copilot": false,
+    "assistant": {
+      "enabled": false
+    }
+  },
+  "chat_panel": {
+    "dock": "right"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": true
+  },
+  "languages": {
+    "JavaScript": {
+      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Go": {
+      "show_completion_documentation": true
+    }
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "rulesCustomizations": [{ "rule": "*", "severity": "warn" }]
+      }
+    },
+    "wakatime": {
+      "settings": {
+        "api-key": "ZzZ"
+      }
+    }
+  },
+  "node": {
+    "path": "/usr/local/bin/node",
+    "npm_path": "/usr/local/bin/npm",
+    "ignore_system_version": false
+  },
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "Hack Nerd Font Mono",
+    "shell": {
+      "with_arguments": {
+        "program": "/usr/local/bin/fish",
+        "args": ["--login"]
+      }
+    }
+  },
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 2,
+    "active_line_width": 3,
+    "coloring": "indent_aware"
+  },
+  "gutter": {
+    "folds": false
+  },
+  "tabs": {
+    "file_icons": true
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "vim": {
+    "highlight_on_yank_duration": 0
+  },
+  "git": {
+    "hunk_style": "unstaged_hollow"
+  }
+}
