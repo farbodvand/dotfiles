@@ -1,9 +1,9 @@
 {
   "auto_update": false,
   "vim_mode": true,
-  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "icon_theme": "Material Icon Theme",
   "theme": "Monokai Night",
-  "buffer_font_size": 19.4,
+  "buffer_font_size": 19.5,
   "buffer_font_family": "Hack",
   "ui_font_family": "SF Pro Text",
   "ui_font_size": 19.3,
@@ -11,19 +11,37 @@
   "format_on_save": "on",
   "show_call_status_icon": false,
   "show_copilot_suggestions": false,
+  "snippet_sort_order": "top",
+  // "proxy": "socks5h://127.0.0.1:8095",
+  // "auto_signature_help": true,
+  "show_completion_documentation": true,
+  "inline_code_actions": false,
+  // "show_signature_help_after_edits": true,
+  "selection_highlight_debounce": 0,
+  "lsp_highlight_debounce": 0,
+  "show_user_picture": false,
+  "use_system_prompts": false,
+  "show_sign_in": false,
+  "tab_size": 2,
   "soft_wrap": "editor_width",
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 300,
+      "padding": 5
+    }
+  },
+  "tabs": {
+    "file_icons": true,
+    "show_diagnostics": "all",
+    "git_status": true
+  },
   "scrollbar": {
     "axes": {
       "horizontal": false
     }
   },
-  "selection_highlight_debounce": 0,
-  "lsp_highlight_debounce": 0,
-  "show_user_picture": false,
-  "use_system_prompts": false,
-  "auto_signature_help": true,
-  "tab_size": 2,
-  "assistant": {
+  "agent": {
     "dock": "left",
     "version": "2"
   },
@@ -37,7 +55,9 @@
     "dock": "right"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
+    "auto_fold_dirs": false,
+    "entry_spacing": "standard"
   },
   "notification_panel": {
     "dock": "right"
@@ -56,56 +76,19 @@
     "diagnostics": false,
     "metrics": false
   },
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 1000
-    }
-  },
+  "autosave": "off",
+  // {
+  // "after_delay": {
+  //   "milliseconds": 1000
+  // }
+  // },
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": true
   },
-  "languages": {
-    "JavaScript": {
-      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
-      "formatter": "prettier",
-      "format_on_save": "on",
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "TypeScript": {
-      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
-      "formatter": "prettier",
-      "format_on_save": "on",
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "TSX": {
-      "language_servers": ["eslint", "typescript-language-server", "!vtsls"],
-      "formatter": "prettier",
-      "format_on_save": "on",
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "Go": {
-      "show_completion_documentation": true
-    }
-  },
-  "lsp": {
-    "eslint": {
-      "settings": {
-        "rulesCustomizations": [{ "rule": "*", "severity": "warn" }]
-      }
-    },
-    "wakatime": {
-      "settings": {
-        "api-key": "ZzZ"
-      }
-    }
+  "completions": {
+    // "words": "disabled",
   },
   "node": {
     "path": "/usr/local/bin/node",
@@ -113,8 +96,12 @@
     "ignore_system_version": false
   },
   "terminal": {
+    "button": true,
+    "font_family": "Hack Nerd Font",
     "dock": "bottom",
-    "font_family": "Hack Nerd Font Mono",
+    "toolbar": {
+      "breadcrumbs": false
+    },
     "shell": {
       "with_arguments": {
         "program": "/usr/local/bin/fish",
@@ -126,13 +113,19 @@
     "enabled": true,
     "line_width": 2,
     "active_line_width": 3,
-    "coloring": "indent_aware"
+    "coloring": "fixed"
   },
   "gutter": {
-    "folds": false
+    "folds": false,
+    "code_actions": false,
+    "runnables": true,
+    "breakpoints": true
   },
-  "tabs": {
-    "file_icons": true
+  "title_bar": {
+    "show_project_items": false,
+    "show_branch_name": false,
+    "show_user_picture": false,
+    "show_sign_in": false
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
@@ -140,8 +133,90 @@
   },
   "vim": {
     "highlight_on_yank_duration": 0
+    // "default_mode": "insert"
   },
   "git": {
     "hunk_style": "unstaged_hollow"
+  },
+
+  "languages": {
+    "JavaScript": {
+      "language_servers": [
+        "vtsls",
+        "eslint",
+        "codebook",
+        "!typescript-language-server"
+      ],
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "language_servers": [
+        "vtsls",
+        "eslint",
+        "codebook",
+        "!typescript-language-server"
+      ],
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "language_servers": [
+        "vtsls",
+        "eslint",
+        "codebook",
+        "!typescript-language-server"
+      ],
+      "formatter": "prettier",
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
+  },
+
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "relative",
+            "importModuleSpecifierEnding": "js"
+          }
+        },
+        "javascript": {
+          "preferences": {
+            "importModuleSpecifier": "relative",
+            "importModuleSpecifierEnding": "js"
+          }
+        }
+      }
+    }
+  },
+
+  "eslint": {
+    "settings": {
+      "rulesCustomizations": [{ "rule": "*", "severity": "warn" }]
+    }
+  },
+  "codebook": {
+    "initialization_options": {
+      "logLevel": "debug"
+    }
+  },
+  "wakatime": {
+    "settings": {
+      "api-key": "xxx"
+    }
   }
 }

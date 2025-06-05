@@ -27,3 +27,6 @@ fish/*
 !.config/zed/settings.json
 !.config/zed/snippets/
 !.config/zed/themes/
+
+.config/pgcli/history
+.config/pgcli/log

@@ -19,7 +19,8 @@ alias ni='npm i'
 alias pip='pip3'
 alias p='python3'
 alias d='docker'
-
+alias update-npm-global='npm outdated -g --parseable --depth=0 | cut -d: -f4 | xargs npm install -g'
+alias gs='git status'
 ### proxies
 #set HTTP_PROXY socks5://127.0.0.1:800
 #set HTTPS_PROXY socks5://127.0.0.1:800
@@ -54,3 +55,7 @@ fzf --fish | source
 #fzf_configure_bindings
 
 set -g fish_term24bit 1
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :

@@ -1,16 +1,48 @@
 [
   {
-    "context": "Workspace",
+    "context": "Dock",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-      "cmd-b": "workspace::ToggleRightDock",
-      "cmd-s": "editor::Format"
+      // Switch between panes
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown"
     }
   },
   {
-    "context": "Editor",
+    "context": "vim_mode == normal && !menu",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+      // Window mode
+      ", w h": "workspace::ActivatePaneLeft",
+      ", w l": "workspace::ActivatePaneRight",
+      ", w k": "workspace::ActivatePaneUp",
+      ", w j": "workspace::ActivatePaneDown",
+      ", w q": "pane::CloseActiveItem",
+      ", w s": "pane::SplitRight",
+      ", w r": "pane::SplitRight",
+      ", w v": "pane::SplitDown",
+      ", w d": "pane::SplitDown",
+      // Space mode
+      ", f": "file_finder::Toggle",
+      ", k": "editor::Hover",
+      ", s": "outline::Toggle",
+      ", shift-s": "project_symbols::Toggle",
+      ", d": "editor::GoToDiagnostic",
+      ", r": "editor::Rename",
+      ", a": "editor::ToggleCodeActions",
+      ", m": "editor::SelectAllMatches",
+      ", c": "editor::ToggleComments",
+      ", y": "editor::Copy",
+      ", p": "editor::Paste",
+      // Other keymaps
+      ", t": "tab_switcher::Toggle"
+    }
+  },
+  {
+    // netrw compatibility
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "f": "project_panel::NewFile"
     }
   }
 ]

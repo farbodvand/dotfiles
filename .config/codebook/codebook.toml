@@ -1,2 +1,3 @@
-dictionaries = ["en_us"]
-use_global = false
+dictionaries = ["en_us", "en_gb"]
+use_global = true
+words = ["codebook", "rustc", "farbod"]

@@ -135,16 +135,16 @@ alt-m = 'workspace M'
 alt-n = 'workspace N'
 alt-o = 'workspace O'
 alt-p = 'workspace P'
-# alt-q = 'workspace Q'
-# alt-r = 'workspace R'
-# alt-s = 'workspace S'
-# alt-t = 'workspace T'
-# alt-u = 'workspace U'
-# alt-v = 'workspace V'
-# alt-w = 'workspace W'
-# alt-x = 'workspace X'
-# alt-y = 'workspace Y'
-# alt-z = 'workspace Z'
+alt-q = 'workspace Q'
+alt-r = 'workspace R'
+alt-s = 'workspace S'
+alt-t = 'workspace T'
+alt-u = 'workspace U'
+alt-v = 'workspace V'
+alt-w = 'workspace W'
+alt-x = 'workspace X'
+alt-y = 'workspace Y'
+alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -168,16 +168,16 @@ alt-shift-m = 'move-node-to-workspace M'
 alt-shift-n = 'move-node-to-workspace N'
 alt-shift-o = 'move-node-to-workspace O'
 alt-shift-p = 'move-node-to-workspace P'
-# alt-shift-q = 'move-node-to-workspace Q'
-# alt-shift-r = 'move-node-to-workspace R'
-# alt-shift-s = 'move-node-to-workspace S'
-# alt-shift-t = 'move-node-to-workspace T'
-# alt-shift-u = 'move-node-to-workspace U'
-# alt-shift-v = 'move-node-to-workspace V'
-# alt-shift-w = 'move-node-to-workspace W'
-# alt-shift-x = 'move-node-to-workspace X'
-# alt-shift-y = 'move-node-to-workspace Y'
-# alt-shift-z = 'move-node-to-workspace Z'
+alt-shift-q = 'move-node-to-workspace Q'
+alt-shift-r = 'move-node-to-workspace R'
+alt-shift-s = 'move-node-to-workspace S'
+alt-shift-t = 'move-node-to-workspace T'
+alt-shift-u = 'move-node-to-workspace U'
+alt-shift-v = 'move-node-to-workspace V'
+alt-shift-w = 'move-node-to-workspace W'
+alt-shift-x = 'move-node-to-workspace X'
+alt-shift-y = 'move-node-to-workspace Y'
+alt-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -215,11 +215,11 @@ if.app-name-regex-substring = 'Visual Studio Code'
 run = ['move-node-to-workspace B']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Docker'
+if.app-name-regex-substring = 'DevDocs'
 run = ['move-node-to-workspace C']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Grok'
+if.app-name-regex-substring = 'Docker'
 run = ['move-node-to-workspace D']
 
 [[on-window-detected]]
@@ -227,19 +227,19 @@ if.app-name-regex-substring = 'ChatGPT'
 run = ['move-node-to-workspace E']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Microsoft Teams'
+if.app-name-regex-substring = 'Firefox'
 run = ['move-node-to-workspace F']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'DevDocs'
+if.app-name-regex-substring = 'Grok'
 run = ['move-node-to-workspace G']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'DevDocs'
+if.app-name-regex-substring = 'Capacities'
 run = ['move-node-to-workspace I']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Firefox'
+if.app-name-regex-substring = 'MongoDB Compass'
 run = ['move-node-to-workspace M']
 
 [[on-window-detected]]
@@ -247,19 +247,63 @@ if.app-name-regex-substring = 'Hoppscotch'
 run = ['move-node-to-workspace N']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'MongoDB Compass'
+if.app-name-regex-substring = 'Telegram'
 run = ['move-node-to-workspace O']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Discord'
+if.app-name-regex-substring = 'pgAdmin 4'
 run = ['move-node-to-workspace P']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Discord'
+run = ['move-node-to-workspace Q']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace R']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace S']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Microsoft Teams'
+run = ['move-node-to-workspace T']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace U']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace V']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace W']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace X']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace Y']
+
+[[on-window-detected]]
+if.app-name-regex-substring = ''
+run = ['move-node-to-workspace Z']
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Chrome'
 run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Telegram'
+if.app-name-regex-substring = 'Zed'
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Yaak'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
@@ -269,10 +313,6 @@ run = ['move-node-to-workspace 4']
 [[on-window-detected]]
 if.app-name-regex-substring = 'Spotify'
 run = ['move-node-to-workspace 5']
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'Capacities'
-run = ['move-node-to-workspace 6']
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'TablePlus'
